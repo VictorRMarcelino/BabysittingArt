@@ -1,0 +1,11 @@
+.campo{
+    border: none;
+    width: 25vw;
+    height: 7vh;
+    font-size: 15px;
+}
+
+.campo:focus{
+    outline: none;
+    border-bottom: 1px solid black;
+}

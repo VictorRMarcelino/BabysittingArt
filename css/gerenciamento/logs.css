@@ -1,0 +1,26 @@
+.estrutura_janelas{
+    flex-direction: column !important;
+}
+
+.title_logs{
+    width: 60vw;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.janela_logs{
+    width: 60vw;
+    height: 50vh;
+    border: 1px solid black;
+}
+
+.tabela_logs{
+    width: 100%;
+}
+
+td{
+    text-align: center;
+}

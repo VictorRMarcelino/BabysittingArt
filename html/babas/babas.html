@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babysitting Art</title>
+    <link rel="stylesheet" href="../../css/estrutura/header.css">
+    <link rel="stylesheet" href="../../css/estrutura/main.css">
+    <link rel="stylesheet" href="../../css/estrutura/footer.css">
+    <link rel="stylesheet" href="../../css/estrutura/botao.css">
+    <link rel="stylesheet" href="../../css/estrutura/campo.css">
+    <link rel="stylesheet" href="../../css/estrutura/janela.css">
+    <link rel="stylesheet" href="../../css/babas/babas.css">
+    <link rel="icon" href="../../img/babysitter.png">
+    <script src="../../js/estrutura/jquery.js"></script>
+    <script src="../../js/estrutura/mensagem.js"></script>
+    <script src="../../js/estrutura/componente.js"></script>
+    <script src="../../js/estrutura/janela.js"></script>
+    <script src="../../js/estrutura/campo.js"></script>
+    <script src="../../js/estrutura/funcao.js"></script>
+    <script src="../../js/babas/babas.js"></script>
+</head>
+<body>
+    <header class="estrutura_header">
+        <nav class="estrutura_header_collection estrutura_header_collection_nav">
+            <ul class="estrutura_header_collection_list">
+                <li>
+                    <a href="../babas/babas.html" class="estrutura_header_collection_list_item estrutura_header_link">Babás</a>
+                </li>
+            </ul>
+        </nav>
+        <aside class="estrutura_header_collection estrutura_header_collection_aside">
+            <ul class="estrutura_header_collection_list">
+                <li>
+                    <span class="estrutura_header_collection_list_item">Usuário</span>
+                    <div class="estrutura_header_collection_list_item_agrupamento">
+                        <a href="#" class="estrutura_header_collection_list_item_agrupamento_item estrutura_header_link">Meu Perfil</a>
+                        <a href="../usuario/login.html" class="estrutura_header_collection_list_item_agrupamento_item estrutura_header_link">Deslogar</a>
+                    </div>
+                </li>
+                <li>
+                    <span class="estrutura_header_collection_list_item">Gerenciamento</span>
+                    <div class="estrutura_header_collection_list_item_agrupamento">
+                        <a href="../gerenciamento/logs.html" class="estrutura_header_collection_list_item_agrupamento_item estrutura_header_link">Logs</a>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+    </header>
+    <main class="estrutura_janelas" name="estrutura_janelas" id="estrutura_janelas">
+        <i><span style="display: flex; font-size: 5vh;">Procure pela babá que deseja</span></i>
+        <section class="janela_babas">
+            <div class="janela_babas_aba janela_babas_filtros">
+                <div class="janela_babas_filtros_item janela_babas_filtros_header">
+                    <span class="janela_babas_filtros_header_text">Filtros</span>
+                </div>
+                <div class="janela_babas_filtros_item janela_babas_filtros_content">
+                    <select name="" id="" class="campo campo_filtro_baba_select">
+                        <option value="0">Selecione o estado desejado</option>
+                    </select>
+                    <select name="" id="" class="campo campo_filtro_baba_select">
+                        <option value="0">Selecione a cidade desejada</option>
+                    </select>
+                </div>
+                <div class="janela_babas_filtros_item janela_babas_filtros_footer">
+                    <button class="botao botao_pesquisar_baba">Pesquisar</button>
+                </div>
+            </div>
+            <div class="janela_babas_aba janela_babas_consulta">
+                <table class="consulta_babas">
+                    <tbody class="consulta_babas">
+                        <tr>
+                            <td>
+                                <div class="card_baba">
+                                    <div class="card_baba_header">
+                                        <span class="card_baba_header_nome">Jennifer Barbosa</span>
+                                    </div>
+                                    <div class="card_baba_content">
+                                        <span class="card_baba_content_preco">Preço: R$4 por hora</span>
+                                        <span class="card_baba_content_disponibilidade">Disponibilidade: Dia inteiro</span>
+                                    </div>
+                                    <div class="card_baba_footer">
+                                        <button class="botao botao_card_baba">Contratar</button>
+                                        <button class="botao botao_card_baba" onclick="Babas.onCickMaisInformacoes(event)">Mais informações</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer class="estrutura_footer">
+        <span>Todos os direitos reservados para Babysitting Art</span>
+    </footer>
+</body>
+</html>

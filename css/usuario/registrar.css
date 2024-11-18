@@ -1,0 +1,102 @@
+.estrutura_janelas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c1e1ec;
+}
+
+.janela_registrar{
+    width: 70vw;
+    height: 70vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 10px 10px #888888;
+}
+
+.janela_registrar{
+    display: flex;
+    flex-direction: row;
+}
+
+.janela_registrar_content{
+    width: 50%;
+
+}
+
+.janela_registrar_formulario{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-right: 1px solid black;
+}
+
+.janela_registrar_header{
+    width: 100%;
+    height: 6vh;
+    border-bottom: 1px solid black;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.janela_registrar_header_title{
+    color: black;
+    font-size: 30px;
+}
+
+.janela_registrar_conteudo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo_digitavel{
+    border: 1px solid black;
+    width: 25vw;
+    height: 7vh;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.janela_registrar_footer{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    gap: 10px;
+    border-top: 1px solid black;
+}
+
+.botao{
+    font-size: 20px !important;
+}
+
+.botao_registrar{
+    width: 6vw;
+    height: 5vh;
+}
+
+.janela_registrar_footer_login_link{
+    font-size: 18px;
+}
+
+.janela_registrar_aside{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.janela_registrar_aside_text{
+    font-size: 50px;
+    color: black;
+}

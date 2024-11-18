@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babysitting Art</title>
+    <link rel="stylesheet" href="../../css/estrutura/main.css">
+    <link rel="stylesheet" href="../../css/estrutura/campo.css">
+    <link rel="stylesheet" href="../../css/estrutura/botao.css">
+    <link rel="stylesheet" href="../../css/usuario/login.css">
+    <link rel="icon" href="../../img/babysitter.png">
+    <script src="../../js/estrutura/jquery.js"></script>
+    <script src="../../js/estrutura/mensagem.js"></script>
+    <script src="../../js/usuario/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+</head>
+<body>
+    <main class="estrutura_janelas">
+        <section class="janela_login">
+            <div class="janela_login_content janela_login_formulario">
+                <div class="janela_login_header">
+                    <span class="janela_login_header_title">Realize seu Login</span>
+                </div>
+                <div class="janela_login_conteudo">
+                    <input class="campo" type="text" placeholder="Usuário/Email" maxlength="32" required>
+                    <input class="campo" type="password" placeholder="Senha" required>
+                </div>
+                <div class="janela_login_footer">
+                    <button class="botao botao_login" onclick="Login.onClickConfirmar()">Confirmar</button>
+                    <button class="botao botao_login">Limpar</button>
+                    <span class="janela_login_footer_login_link">Não está cadastrado ainda? <a href="../usuario/registrar.html">Clique Aqui!</a></span>
+                </div>
+            </div>
+            <div class="janela_login_content janela_login_aside">
+                <i>
+                    <span class="janela_login_aside_text">
+                        Faça o login e encontre as melhores babás de sua região 
+                    </span>
+                </i>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
