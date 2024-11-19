@@ -4,47 +4,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #c1e1ec;
+    background-image: url('../../img/image.png');
 }
 
 .janela_login{
-    width: 70vw;
+    width: 40vw;
     height: 70vh;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 5px;
-    background-color: white;
-    box-shadow: 10px 10px #888888;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    backdrop-filter: blur(20px);
 }
 
 .janela_login{
     display: flex;
-    flex-direction: row;
-}
-
-.janela_login_content{
-    width: 50%;
-
-}
-
-.janela_login_formulario{
-    display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    border-right: 1px solid black;
 }
 
 .janela_login_header{
     width: 100%;
-    height: 6vh;
     border-bottom: 1px solid black;
     padding-left: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.janela_login_header_title{
-    color: black;
+    text-align: center;
+    color: white;
     font-size: 30px;
+    padding: 10px;
 }
 
 .janela_login_conteudo{
@@ -56,7 +43,16 @@
     gap: 15px;
 }
 
-.campo_digitavel{
+.janela_login_conteudo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.janela_login_conteudo_campo_input{
     border: 1px solid black;
     width: 25vw;
     height: 7vh;
@@ -76,7 +72,7 @@
 }
 
 .botao{
-    font-size: 20px !important;
+    font-size: 15px !important;
 }
 
 .botao_login{
@@ -86,6 +82,7 @@
 
 .janela_login_footer_login_link{
     font-size: 16px;
+    color: white;
 }
 
 .janela_login_aside{

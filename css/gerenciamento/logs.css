@@ -24,3 +24,8 @@
 td{
     text-align: center;
 }
+
+.log_visualizar{
+    content: url('../../img/eye.png');
+    cursor: pointer;
+}

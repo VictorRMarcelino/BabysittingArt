@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ptBR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,44 +8,40 @@
     <link rel="stylesheet" href="../../css/estrutura/main.css">
     <link rel="stylesheet" href="../../css/estrutura/campo.css">
     <link rel="stylesheet" href="../../css/usuario/registrar.css">
-    <link rel="stylesheet" href="../../css/estrutura/botao.css">
     <link rel="icon" href="../../img/babysitter.png">
+    <script src="../../js/usuario/registrar.js"></script>
+    <script src="../../js/estrutura/jquery.js"></script>
+    <script src="../../js/estrutura/mensagem.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
+
 <body>
     <main class="estrutura_janelas">
         <section class="janela_registrar">
-            <div class="janela_registrar_content janela_registrar_formulario">
-                <div class="janela_registrar_header">
-                    <span class="janela_registrar_header_title">Realize seu cadastro</span>
-                </div>
-                <div class="janela_registrar_conteudo">
-                    <input class="campo" type="text" placeholder="Usuário" maxlength="32">
-                    <input class="campo" type="password" placeholder="Senha">
-                    <select class="campo" name="" id="tipo">
-                        <option value="0">Selecione seu tipo de conta</option>
-                        <option value="1">Mãe (Casal)</option>
-                        <option value="2">Pai (Casal)</option>
-                        <option value="3">Mãe (Separada)</option>
-                        <option value="4">Pai (Separado)</option>
-                        <option value="5">Babá</option>
-                    </select>
-                    <input class="campo" type="email" placeholder="Email">
-                    <input class="campo" type="tel" pattern="[0-9]{5}-[0-9]{4}" placeholder="Telefone">
-                </div>
-                <div class="janela_registrar_footer">
-                    <button class="botao botao_registrar">Confirmar</button>
-                    <button class="botao botao_registrar">Limpar</button>
-                    <span class="janela_registrar_footer_login_link">Já possui uma conta? <a href="../usuario/login.html">Clique Aqui!</a></span>
-                </div>
+            <div class="janela_registrar_header">
+                <span class="janela_registrar_header_title">Registrar</span>
             </div>
-            <div class="janela_registrar_content janela_registrar_aside">
-                <i>
-                    <span class="janela_registrar_aside_text">
-                        Faça seu cadastro agora mesmo e encontre a babá que você deseja 
-                    </span>
-                </i>
+            <div class="janela_registrar_conteudo">
+                <span class="janela_registrar_conteudo_campo">
+                    <input class="janela_registrar_conteudo_campo_input" type="text" placeholder="Usuário" maxlength="32">
+                    <span class="janela_registrar_conteudo_campo_input_icon icon_user"></span>
+                </span>
+                <span class="janela_registrar_conteudo_campo">
+                    <input class="janela_registrar_conteudo_campo_input" type="password" placeholder="Senha">
+                    <span class="janela_registrar_conteudo_campo_input_icon icon_password"></span>
+                </span>
+                <span class="janela_registrar_conteudo_campo">
+                    <input class="janela_registrar_conteudo_campo_input" type="email" placeholder="Email">
+                    <span class="janela_registrar_conteudo_campo_input_icon icon_email"></span>
+                </span>
+            </div>
+            <div class="janela_registrar_footer">
+                <button class="botao botao_registrar" onclick="Registrar.onClickConfirmar()">Confirmar</button>
+                <button class="botao botao_registrar">Limpar</button>
+                <span class="janela_registrar_footer_login_link">Já possui uma conta? <a href="../usuario/login.html"><b>Clique Aqui!</b></a></span>
             </div>
         </section>
     </main>
 </body>
+
 </html>
