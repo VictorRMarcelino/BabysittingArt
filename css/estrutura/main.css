@@ -19,4 +19,10 @@ body, html{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('../../img/image.png');
+    flex-direction: column;
+}
+
+span{
+    color: white;
 }

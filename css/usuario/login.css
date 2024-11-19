@@ -52,8 +52,21 @@
     gap: 15px;
 }
 
+.janela_login_conteudo_campo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 50px;
+    background-color: white;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .janela_login_conteudo_campo_input{
-    border: 1px solid black;
+    border: none;
+    background-color: transparent;
     width: 25vw;
     height: 7vh;
     border-radius: 10px;
@@ -61,40 +74,47 @@
     padding-left: 10px;
 }
 
+.janela_login_conteudo_campo_input_icon{
+    width: 2vw;
+    height: 4vh;
+}
+
+.icon_user{
+    content: url('../../img/user.png');
+}
+
+.icon_password{
+    content: url('../../img/eye.png');
+    cursor: pointer;
+}
+
+.icon_email{
+    content: url('../../img/email.png');
+}
+
 .janela_login_footer{
     width: 100%;
-    height: 7vh;
     display: flex;
     align-items: center;
-    padding-left: 10px;
+    padding: 10px;
     gap: 10px;
     border-top: 1px solid black;
 }
 
-.botao{
-    font-size: 15px !important;
-}
-
-.botao_login{
+.janela_login_footer_button{
+    font-size: 15px;
+    border-radius: 50px;
+    border: none;
     width: 6vw;
     height: 5vh;
 }
 
-.janela_login_footer_login_link{
-    font-size: 16px;
+.footer_text{
     color: white;
+    text-decoration: none;
 }
 
-.janela_login_aside{
-    height: 100%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.janela_login_aside_text{
-    font-size: 50px;
-    color: black;
+.janela_login_footer_register_link{
+    font-size: 15px;
 }
 

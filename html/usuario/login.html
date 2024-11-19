@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Babysitting Art</title>
+    <title>Art</title>
     <link rel="stylesheet" href="../../css/estrutura/main.css">
     <link rel="stylesheet" href="../../css/estrutura/campo.css">
     <link rel="stylesheet" href="../../css/estrutura/botao.css">
     <link rel="stylesheet" href="../../css/usuario/login.css">
-    <link rel="icon" href="../../img/babysitter.png">
+    <link rel="icon" href="../../img/open-book.png">
     <script src="../../js/estrutura/jquery.js"></script>
     <script src="../../js/estrutura/mensagem.js"></script>
     <script src="../../js/usuario/login.js"></script>
@@ -24,23 +24,18 @@
             </div>
             <div class="janela_login_conteudo">
                 <span class="janela_login_conteudo_campo">
-                    <input class="janela_login_conteudo_campo_input" type="text" placeholder="Usuário" maxlength="32">
+                    <input class="janela_login_conteudo_campo_input" type="text" placeholder="Usuário/Email" maxlength="32">
                     <span class="janela_login_conteudo_campo_input_icon icon_user"></span>
                 </span>
                 <span class="janela_login_conteudo_campo">
                     <input class="janela_login_conteudo_campo_input" type="password" placeholder="Senha">
                     <span class="janela_login_conteudo_campo_input_icon icon_password"></span>
                 </span>
-                <span class="janela_login_conteudo_campo">
-                    <input class="janela_login_conteudo_campo_input" type="email" placeholder="Email">
-                    <span class="janela_login_conteudo_campo_input_icon icon_email"></span>
-                </span>
             </div>
             <div class="janela_login_footer">
-                <button class="botao botao_login" onclick="Login.onClickConfirmar()">Confirmar</button>
-                <button class="botao botao_login">Limpar</button>
-                <span class="janela_login_footer_login_link">Não está cadastrado ainda? <a
-                        href="../usuario/login.html"><b>Clique Aqui!</b></a></span>
+                <button class="janela_login_footer_button" onclick="Login.onClickConfirmar()">Confirmar</button>
+                <button class="janela_login_footer_button">Limpar</button>
+                <span class="footer_text janela_login_footer_register_link">Não está cadastrado ainda? <a class="footer_text" href="../usuario/registrar.html"><b>Clique Aqui!</b></a></span>
             </div>
         </section>
     </main>

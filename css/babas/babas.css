@@ -6,59 +6,9 @@
 .janela_babas{
     width: 80vw;
     height: 65vh;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 10px;
     display: flex;
-}
-
-.janela_babas_aba{
-    width: 100%;
-}
-
-.janela_babas_filtros{
-    border-right: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.janela_babas_filtros_item{
-    width: 100%;
-    display: flex;
-}
-
-.janela_babas_filtros_header{
-    align-items: center;
-    padding-left: 10px;
-    height: 10%;
-    justify-content: center;
-}
-
-.janela_babas_filtros_header_text{
-    font-size: 30px;
-}
-
-.janela_babas_filtros_content{
-    height: 80%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.campo_filtro_baba_select{
-    font-size: 17px;
-}
-
-.janela_babas_filtros_footer{
-    height: 10%;
-    justify-content: center;
-}
-
-.botao_pesquisar_baba{
-    width: 25vw;
-    height: 6vh;
-    font-size: 20px;
 }
 
 .consulta_babas{
@@ -96,6 +46,7 @@
 }
 
 .botao_card_baba{
+    display: none;
     width: 10vw;
     height: 4vh;
 }
